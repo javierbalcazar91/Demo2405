@@ -1,0 +1,122 @@
+{
+  "id": "86735ae7-b7b7-4afa-b239-277c9e5e8685",
+  "version": "2.0",
+  "name": "Pruebas Swag Labs",
+  "url": "https://www.saucedemo.com",
+  "tests": [{
+    "id": "191aa370-c9ad-45bf-aced-2689661e20a4",
+    "name": "Saucedemo test",
+    "commands": [{
+      "id": "e9912175-5922-45e5-907a-7370e903f8df",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24e4973a-a289-4446-819b-46413037def0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "868x679",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2237701f-7fc2-415e-97f7-c8d1a15f35de",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Swag Labs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5df328ab-aca0-43ee-8f61-6853616a9110",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d455bc80-eca7-46f4-a2bc-86da7680e7b6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6240f751-50b4-4e1a-b7a7-53d0595d6297",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bed05acb-202b-4d24-ad68-fafde0ebe15f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b451ca21-08ea-407e-90af-e0689ff56bf8",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6d1177f-5836-4b61-9462-051268ed3e38",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=*[data-test=\"error\"]",
+      "targets": [],
+      "value": "Epic sadface: Username is required"
+    }, {
+      "id": "72980048-68b7-4861-aecb-91e3eb7d7323",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6dd9870-702f-4510-bd5d-c4e1eae2d770",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Esto es una prueba"
+    }]
+  }],
+  "suites": [{
+    "id": "41cf59b4-a9e8-4423-9fbf-d19d60fb801f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["191aa370-c9ad-45bf-aced-2689661e20a4"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
